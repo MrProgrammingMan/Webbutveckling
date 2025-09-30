@@ -1,20 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Webbhistoria</title>
 </head>
 <body>
 
+<ul>
+    <li><a href="#" class="active" onclick="showSection('start', event)">Startsida</a></li>
+    <li><a href="#" onclick="showSection('historia', event)">Webbens Historia</a></li>
+    <li><a href="#" onclick="showSection('principer', event)">Grundläggande Principer</a></li>
+    <li><a href="#" onclick="showSection('ommig', event)">Om mig</a></li>
+</ul>
+
+
+<section id ="start">
+<div id="startsida" class="start">
 
 <h1 class="introduktion">Introduktion</h1>
 
-<p>Hej och välkommen till Webbens Historia! Om ni scrollar ner så kommer ni få en lista på varje decennium och någonting viktigt som la en grund till webben som vi ser den idag.</p>
-<p>På vänster kommer du kunna se vart du är och hur långt du har till varje decennium. På sista sidan finns det information om de grundläggande principerna som webben bygger på.</p>
+<p>Hej och välkommen till Webbens Historia! Uppe på toppen kommer du se olika knappar som du kommer använda för att navigera webbsidan, det finns "Startsida" vilket är där du är nu. .</p>
+<p>Det finns "Webbens Historia" som går i detalj på något stort som byggde på hur webben ser ut idag och så finns det också "Grunldäggande Principer" som går igenom på basen av hur webben ser ut.</p>
+<p>Till sist finns det en liten fin sida "Om mig" där du får lära dig lite mer om vem som skapade denna webbsida!</p>
 <p>Glad läsande!</p>
+<img src="https://webbteknik.net/antonl/historia/img/internet.webp" alt="starten" class="start">
+</div>
+</section>
 
+<section id="historia">
 <h1>Webbens Historia, från decennium, till decennium</h1>
 
 <h2 class="sextio">1960</h2>
@@ -25,6 +41,7 @@
 <p>ARPA startade en avdelning för IT innovation som JCR Licklider fick äran att leda. Detta ger han chansen att berätta sina tankar om ett "intergalatiskt nätverk" och kanske få de till verklighet. Tyvärr så hade han inga konkreta förslag på hur det skulle gå till men hans chans var inte över. året 1964 fick han job på DARPA(Defense Advanced Resarch Project Agency). Då skapar han och hans lag "Arpanet" vilket kommer visa sig vara föregångaren till internetet.</p>
 
 <h2 class="sjuttio">1970</h2>
+
 
 <p>Året 1971 så skickas det första mejlet av Ray Tamilson mellan två datorer. Han skickar detta mejl från sin dator till en annan dator som båda står bredvid varandra och efter detta så börjar fler och fler personer använda mejl.</p>
 <p>Ray Tamilson jobbar under 1960-talet på ett forskning- och utvecklingsföretag där de jobbade med bland annat teknik såsom Arpanet. Det hade redan funnits en send message funktion på datorer men det var bara på samma dator. Ray listar ut ett sätt att skicka det mellan olika datorer, därmed skapar han e-posten.</p>
@@ -58,7 +75,9 @@
 <p>Jag tror vi alla har hört ordet AI nu någon gång i vårt liv och säkert ganska ofta. På det senaste 4 åren så har AI gått från ett verktyg som vi kunde lätt märka på AI generade bilder och texter, till ett verktyg där det finns nu AI för att ens lista ut om något är AI.</p>
 <p>AI funkar genom att använda data den har blivit inmatad och tränad på och använder sedan den träningen för att generera bilder eller text på vad användaren frågar om. Men det gör den också svag på några områden, såsom bilder på saker som den inte har någon träning på"</p>
 <p>Men AI har också sina negativa sidor, såsom hur vi använder den och hur det kommer se ut för framtiden. För att elever använder en model som heter "ChatGPT" väldigt ofta i skolan för att göra deras arbete istället för att faktiskt göra det själv. Vi vet inte heller vad AI kommer ha för jobb i samhället i framtiden heller. Kommer den ta våra jobb eller kommer den bli använd för skändliga aktiviteter.</p>
+</section>
 
+<section id="principer">
 <h1 class="principer">Webbens Grundläggande Principer</h1>
 
 <p>Allt det här är coolt och allt, men hur funkar egentligen allt det här? Hur är det möjligt att du kan bara skriva in något i en webbläsare och komma från en sida till en annan, snabbt och smidigt?</p>
@@ -67,7 +86,7 @@
 <p>Men det är bara hur internetet är byggt, men hur är det egentligen vi surfar webbsidor och liknande? Vi vet ju att det inte är någonting som heter TCP/IP. Jo, du har säkert hört sekvensen av bokstäver "www" eller "World Wide Web" och det är så vi surfar webbsidor snabbt och är vad alla webbläsarna är byggda på. Den gör det möjligt med så kallade "URL" för att läsa in webbsidor. URL visar din dator hur den ska komma till webbsidan och är också dels ett system för att hjälpa webbsidor kan läsa och visa innehåll.</p>
 <p>World Side Web skapades 1989 och på den tiden fanns det inget sätt att länka till och mellan saker och webben gjorde det möjligt. Du kunde nu också även visa både foton, film och ljud vilket var ett stort steg för webben.</p>
 <p>Vi använder webben ännu idag och det är en fundamental princip i hur webben fungerar men den är inte lika viktigt som internetet är.</p>
-
+</section>
 
 
 
