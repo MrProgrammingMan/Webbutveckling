@@ -1,13 +1,5 @@
-img.start {
-position: relative;
-float: right;
-}
-
 body {
-    background-color: aliceblue;
-}
-
-body {
+  background-color: aliceblue;
   margin: 0;
   padding-top: 40px;
 }
@@ -74,4 +66,15 @@ section {
 
 #start {
   display: block;
+}
+
+img.start {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+img.sander {
+  margin-left: 20px;
+  margin-top: -50px;
+  float: right;
 }
