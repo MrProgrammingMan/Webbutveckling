@@ -7,8 +7,8 @@ function showSection(sectionId, event) {
   if (event && event.currentTarget) event.currentTarget.classList.add("active");
 }
 
-  window.onload = function() {
-  showSection('start', { preventDefault: () => {}, currentTarget: document.querySelector('a.active') });
+window.onload = function () {
+  showSection('start', { preventDefault: () => { }, currentTarget: document.querySelector('a.active') });
 };
 
 document.querySelectorAll(".årtal h2").forEach(h2 => {
