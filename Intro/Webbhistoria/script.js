@@ -5,7 +5,14 @@ function showSection(sectionId, event) {
   if (activeSection) activeSection.style.display = "block";
   document.querySelectorAll("ul li a").forEach(link => link.classList.remove("active"));
   if (event && event.currentTarget) event.currentTarget.classList.add("active");
+}
+
   window.onload = function() {
   showSection('start', { preventDefault: () => {}, currentTarget: document.querySelector('a.active') });
 };
-}
+
+document.querySelectorAll(".årtal h2").forEach(h2 => {
+  h2.addEventListener("click", () => {
+    h2.parentElement.classList.toggle("open");
+  });
+});

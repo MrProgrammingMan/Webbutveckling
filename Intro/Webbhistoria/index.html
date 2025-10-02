@@ -1,109 +1,223 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Webbhistoria</title>
 </head>
+
 <body>
 
-<ul>
-    <li><a href="#" class="active" onclick="showSection('start', event)">Startsida</a></li>
-    <li><a href="#" onclick="showSection('historia', event)">Webbens Historia</a></li>
-    <li><a href="#" onclick="showSection('principer', event)">Grundläggande Principer</a></li>
-    <li><a href="#" onclick="showSection('ommig', event)">Om mig</a></li>
-</ul>
+    <ul>
+        <li><a href="#" class="active" onclick="showSection('start', event)">Startsida</a></li>
+        <li><a href="#" onclick="showSection('historia', event)">Webbens Historia</a></li>
+        <li><a href="#" onclick="showSection('principer', event)">Grundläggande Principer</a></li>
+        <li><a href="#" onclick="showSection('ommig', event)">Om mig</a></li>
+    </ul>
 
 
-<section id ="start">
-<div id="startsida" class="start">
+    <section id="start">
+        <div id="startsida" class="start">
 
-<h1 class="introduktion">Introduktion</h1>
+            <h1 class="introduktion">Introduktion</h1>
 
-<p>Hej och välkommen till Webbens Historia! Uppe på toppen kommer du se olika knappar som du kommer använda för att navigera webbsidan, det finns "Startsida" vilket är där du är nu. .</p>
-<p>Det finns "Webbens Historia" som går i detalj på något stort som byggde på hur webben ser ut idag och så finns det också "Grunldäggande Principer" som går igenom på basen av hur webben ser ut.</p>
-<p>Till sist finns det en liten fin sida "Om mig" där du får lära dig lite mer om vem som skapade denna webbsida!</p>
-<p>Glad läsande!</p>
-</div>
-</section>
+            <p>Hej och välkommen till Webbens Historia! Uppe på toppen kommer du se olika knappar som du kommer använda
+                för att navigera webbsidan, det finns "Startsida" vilket är där du är nu. .</p>
+            <p>Det finns "Webbens Historia" som går i detalj på något stort som byggde på hur webben ser ut idag. För att öppna varje paragraf klickar du på årtalet och så kommer texten visas. Och så
+                finns det också "Grundläggande Principer" som går igenom på basen av hur webben ser ut.</p>
+            <p>Till sist finns det en liten fin sida "Om mig" där du får lära dig lite mer om vem som skapade denna
+                webbsida!</p>
+            <p>Glad läsande!</p>
+            <img src="https://webbteknik.net/toth/webbhistoria/webben.jpeg" alt="webben">
+        </div>
+    </section>
 
-<section id="historia">
-<h1>Webbens Historia, från decennium, till decennium</h1>
+    <section id="historia">
+        <h1>Webbens Historia, från decennium, till decennium</h1>
 
-<h2 class="sextio">1960</h2>
+        <div class="årtal">
+            <h2>1960 JCR Licklider "intergalatiskt nätverk"</h2>
+            <div class="fakta">
+                <p>Året 1963 så föreslog MIT-Forskaren och psykologen JCR Licklider en ide om en så kallat
+                    "intergalatiskt nätverk" där datorer över hela världen kunde prata med varandra </p>
+                <p>Han var väldigt intreserad om iden att människor och datorer kunde interagera med varandra. Han var
+                    tidig med att även föreslå skärmar och tangentbord vi människor kunde använda som griffeltavlor</p>
+                <p>Egentligen så var det satelliten "Sputnik" som Sovjet hade skickat upp året 1957 som startade allt,
+                    efterom USA var snabba att skapa ARPA(Advanced Research Projects Agency) för att komma ikap Sovjet.
+                </p>
+                <p>ARPA startade en avdelning för IT innovation som JCR Licklider fick äran att leda. Detta ger han
+                    chansen att berätta sina tankar om ett "intergalatiskt nätverk" och kanske få de till verklighet.
+                    Tyvärr så hade han inga konkreta förslag på hur det skulle gå till men hans chans var inte över.
+                    året 1964 fick han job på DARPA(Defense Advanced Resarch Project Agency). Då skapar han och hans lag
+                    "Arpanet" vilket kommer visa sig vara föregångaren till internetet.</p>
+            </div>
+        </div>
 
-<p>Året 1963 så föreslog MIT-Forskaren och psykologen JCR Licklider en ide om en så kallat "intergalatiskt nätverk" där datorer över hela världen kunde prata med varandra </p>
-<p>Han var väldigt intreserad om iden att människor och datorer kunde interagera med varandra. Han var tidig med att även föreslå skärmar och tangentbord vi människor kunde använda som griffeltavlor</p>
-<p>Egentligen så var det satelliten "Sputnik" som Sovjet hade skickat upp året 1957 som startade allt, efterom USA var snabba att skapa ARPA(Advanced Research Projects Agency) för att komma ikap Sovjet.</p>
-<p>ARPA startade en avdelning för IT innovation som JCR Licklider fick äran att leda. Detta ger han chansen att berätta sina tankar om ett "intergalatiskt nätverk" och kanske få de till verklighet. Tyvärr så hade han inga konkreta förslag på hur det skulle gå till men hans chans var inte över. året 1964 fick han job på DARPA(Defense Advanced Resarch Project Agency). Då skapar han och hans lag "Arpanet" vilket kommer visa sig vara föregångaren till internetet.</p>
+        <div class="årtal">
+            <h2>1970 Första mejlet</h2>
+            <div class="fakta">
+                <p>Året 1971 så skickas det första mejlet av Ray Tamilson mellan två datorer. Han skickar detta mejl
+                    från
+                    sin dator till en annan dator som båda står bredvid varandra och efter detta så börjar fler och fler
+                    personer använda mejl.</p>
+                <p>Ray Tamilson jobbar under 1960-talet på ett forskning- och utvecklingsföretag där de jobbade med
+                    bland
+                    annat teknik såsom Arpanet. Det hade redan funnits en send message funktion på datorer men det var
+                    bara
+                    på samma dator. Ray listar ut ett sätt att skicka det mellan olika datorer, därmed skapar han
+                    e-posten.
+                </p>
+                <p>Han är anledningen vi använder @ också eftersom när han skickade mejl mellan datorer så tyckte han @
+                    passade bra in mellan mottagare och datornamn när man skickade den. Vi använder det här system även
+                    idag
+                    och är en fundamental grund till e-post.</p>
+            </div>
+        </div>
 
-<h2 class="sjuttio">1970</h2>
+        <div class="årtal">
+            <h2>1980 Första svenska mejlet</h2>
+            <div class="fakta">
+                <p>Med tal om mejl, så skickas det första mejlet i Svergie år 1983, där Björn Eriksen blir den första
+                    svenksen som tog emot ett mejl över interntet.</p>
+                <p>Mejlet kommer från Amsterdam och Jim McKie på European Unix Network. Mejlet är dock bara ett testmejl
+                    och
+                    är inget spännande men det är historisk för Sveriges Webbhistoria.</p>
+                <p>Ännu idag används e-post globalt och är fortfarande det kommunikationsätt som används av flest
+                    internetanvändare med en rapport från 2019 som säger att e-post används av 97 procent av
+                    internetanvändare.</p>
+            </div>
+        </div>
+
+        <div class="årtal">
+            <h2>1990 Första webbplatsen</h2>
+            <div class="fakta">
+                <p>Den första webbplatsen i Svergie skapas under året 1993 vid Linköpings Universitet. Det är en
+                    datorförening som heter Lysator som då skapade sin egen server och därmed en webbsida. </p>
+                <p>Webbsidan får addressen lysator.liu.se och blir till den sjätte webbsidan i världen. Dens innehåll är
+                    väldigt lätt och handlar bara om verksamheten, lite informatiom om vad de är och medlemmarna på
+                    föreningen.</p>
+            </div>
+        </div>
+
+        <div class="årtal">
+            <h2>2000 Youtube skapas</h2>
+            <div class="fakta">
+                <p>2005 blir året som Youtube skapas, men vart började youtube egentligen? Vilken var den första videon?
+                    Jo,
+                    det var en video som kallades "me at the zoo" som laddades up av Jawed Karim.</p>
+                <p>Youtube blir känt snabbt, med 72 miljoner användare bara ett år efter det skapades. Men någonting
+                    annant
+                    hände också ett år efter. Youtube blir köpt av google för 12 miljarder kronor och Youtube har varit
+                    en
+                    av de mest besökta webbsidorna sen dess.</p>
+                <p>En känd svensk youtuber från tidig youtube som är fortfarande kända idag är den svenska youtubern
+                    Felix
+                    Kjellberg, eller mer känd som PewDiePie. Växer under 2010-talet väldigt snabbt och redan 2013 är
+                    hans
+                    youtube kanal den mest prenumerade kanalen med 13 miljoner prenumeranter.</p>
+            </div>
+        </div>
+
+        <div class="årtal">
+            <h2>2010 Snapchat skapas</h2>
+            <div class="fakta">
+                <p>En av de mest kända sociala medier platformer släpptes under 10-talet och denna app heter Snapchat.
+                </p>
+                <p>Snapchat är en app där folk kan snabbt skicka bilder och videor såm då kallas "snaps" till varandra
+                    och
+                    det blir snabbt känt mellan ungdomar då de kallas att "snapa".</p>
+                <p>Men bilderna och videorna som publicerades sparades inte av Snapchat och det finns många funktioner
+                    som
+                    ger användaren information om deras bilder sparas eller liknande. Vilket gjorde att många
+                    uppskattade
+                    integriteten med Snapchat och att de alltid visste vad andra folk gjorde med deras bilder.</p>
+            </div>
+        </div>
+
+        <div class="årtal">
+            <h2>2020 AI sprids över hela världen</h2>
+            <div class="fakta">
+                <p>Jag tror vi alla har hört ordet AI nu någon gång i vårt liv och säkert ganska ofta. På det senaste 4
+                    åren
+                    så har AI gått från ett verktyg som vi kunde lätt märka på AI generade bilder och texter, till ett
+                    verktyg där det finns nu AI för att ens lista ut om något är AI.</p>
+                <p>AI funkar genom att använda data den har blivit inmatad och tränad på och använder sedan den
+                    träningen
+                    för att generera bilder eller text på vad användaren frågar om. Men det gör den också svag på några
+                    områden, såsom bilder på saker som den inte har någon träning på"</p>
+                <p>Men AI har också sina negativa sidor, såsom hur vi använder den och hur det kommer se ut för
+                    framtiden.
+                    För att elever använder en model som heter "ChatGPT" väldigt ofta i skolan för att göra deras arbete
+                    istället för att faktiskt göra det själv. Vi vet inte heller vad AI kommer ha för jobb i samhället i
+                    framtiden heller. Kommer den ta våra jobb eller kommer den bli använd för skändliga aktiviteter.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="principer">
+        <h1 class="principer">Webbens Grundläggande Principer</h1>
+
+        <p>Allt det här är coolt och allt, men hur funkar egentligen allt det här? Hur är det möjligt att du kan bara
+            skriva in något i en webbläsare och komma från en sida till en annan, snabbt och smidigt?</p>
+        <p>Jo redan 1974 fick vi se starten på tekinken bakom internetet. Den gick vid namnet TCP/IP. Det är två stycken
+            seperata protokol som är skapad av folk från Arpanet (det som la grunden till internetet)</p>
+        <p>Dessa protokol hade ett mål: att snabbt skicka paket med information mellan datorer och nätverk. Det spelar
+            ingen roll hur eller vad du skickar i paketet, bara det kommer fram. Paketet delades också upp i mindre
+            bitar och sen gjordes hel för att göra det lättare och snabbare att skicka.</p>
+        <p>Men det är bara hur internetet är byggt, men hur är det egentligen vi surfar webbsidor och liknande? Vi vet
+            ju att det inte är någonting som heter TCP/IP. Jo, du har säkert hört sekvensen av bokstäver "www" eller
+            "World Wide Web" och det är så vi surfar webbsidor snabbt och är vad alla webbläsarna är byggda på. Den gör
+            det möjligt med så kallade "URL" för att läsa in webbsidor. URL visar din dator hur den ska komma till
+            webbsidan och är också dels ett system för att hjälpa webbsidor läsa och visa innehåll.</p>
+        <p>World Side Web skapades 1989 och på den tiden fanns det inget sätt att länka till och mellan saker, så World Wide Web
+            gjorde det möjligt. Du kunde nu också även visa både foton, film och ljud vilket var ett stort steg för
+            webben.</p>
+        <p>Vi använder webben ännu idag och det är en fundamental princip i hur webben fungerar och är nästan lika viktigt som internetet är.</p>
+        <img src="https://webbteknik.net/antonl/historia/img/internet.webp" alt="starten">
+    </section>
+
+    <section id="ommig">
+        <h1 class="ommig">Om Mig</h1>
+        <p>Mitt namn är Sander Josefsson, jag var född i Varberg 2008, den 13 oktober klockan 17:47. Jag skrev den här
+            texten för jag bliv tvingad av min lärare, Fredrik Silverglimth. Tydligen så var anledningen att det var
+            lättare att göra detta än att ha oss plugga på sakerna en åt gången. Men jag ignorerar att det skulla vara
+            jobbigare att ha gjort det på det sättet och att han faktiskt gav oss en ganska (ganska är generöst) rolig
+            uppgift och istället skyller jag alla mina problem på han.</p>
+        <p>Just det! Det skulle handla om mig. Jag går på Peder Skrivarens skola i år 2, är jag glad för att vara där?
+            Nej. Men är jag glad att jag får pengar ifrån det? Ja.</p>
+        <p>Min fritid ser ut så här: vakna > spela > skola > plugga så lite som möjligt > lunch > trött vilket då läggs
+            på plugga så lite som möjligt > cykla hem > spela > middag > sova och så börjar det om. Varför är jag fast i
+            denna cykeln? jo det beror på den globala uppvärmningen av jorden, det är en tragedi. Det hade dock inget
+            att göra om mig, jag ljög.</p>
+        <p>Hursomhelst, så är jag glad att få gjort denna uppgift äntligen, jag hoppas du har gillat min webbsida även
+            om den inte är den finaste där ute. Nah vet du vad jag är trött på det här, ha istället Lorem Ipsum, hej då!
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros felis, dictum id justo quis, feugiat
+            fermentum risus. Proin aliquet ipsum egestas mattis euismod. Sed nec magna blandit, rutrum nulla eget,
+            convallis mi. Integer ut sem commodo, egestas ipsum ut, bibendum nunc. Vestibulum ut pharetra sem. In
+            egestas libero a vestibulum efficitur. Proin lacinia luctus lorem, eget convallis dolor tincidunt vel. Nulla
+            facilisi. Duis et ante rutrum, iaculis quam sit amet, tempor nunc. In ornare fringilla dictum. Maecenas
+            finibus tristique eleifend. Sed ultrices ex id mauris commodo, vitae auctor lacus interdum. Sed molestie
+            velit dignissim velit rhoncus, sit amet ullamcorper urna fringilla. Nulla sit amet urna tincidunt, luctus
+            enim eget, blandit mauris. </p>
+        <p>Phasellus eget eros vitae arcu porttitor dignissim. Etiam nec cursus nulla. Nullam nec urna sit amet sapien
+            gravida ullamcorper vel id arcu. Donec porttitor dui auctor dui tincidunt, eu facilisis enim consequat.
+            Morbi suscipit ut lectus mollis efficitur. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. Ut scelerisque felis metus, vel gravida nibh ullamcorper non. Donec
+            tempor accumsan est nec varius. Aenean elementum mollis felis, eu facilisis tellus. Vivamus eleifend est non
+            quam varius, sagittis vehicula mauris consectetur. Duis magna mi, volutpat non hendrerit vel, tempor nec
+            magna. Pellentesque vitae pulvinar turpis, eu scelerisque elit. Praesent ornare, magna at consectetur
+            semper, erat turpis tristique justo, eu eleifend eros mi non nisl.</p>
+        <p>Proin et sem massa. Duis nec velit at neque gravida sodales. Mauris dapibus nibh eu ipsum iaculis sagittis.
+            Integer vel pellentesque neque, molestie luctus lorem. Curabitur feugiat, erat ac consectetur rutrum, nisi
+            purus sodales ex, vitae sollicitudin orci mauris ut risus. Curabitur pretium tortor quis dolor imperdiet
+            efficitur. Suspendisse potenti. Integer id libero sodales, consectetur lorem vitae, luctus massa.</p>
+        <img src="funny.jpg" alt="sander">
+    </section>
 
 
-<p>Året 1971 så skickas det första mejlet av Ray Tamilson mellan två datorer. Han skickar detta mejl från sin dator till en annan dator som båda står bredvid varandra och efter detta så börjar fler och fler personer använda mejl.</p>
-<p>Ray Tamilson jobbar under 1960-talet på ett forskning- och utvecklingsföretag där de jobbade med bland annat teknik såsom Arpanet. Det hade redan funnits en send message funktion på datorer men det var bara på samma dator. Ray listar ut ett sätt att skicka det mellan olika datorer, därmed skapar han e-posten.</p>
-<p>Han är anledningen vi använder @ också eftersom när han skickade mejl mellan datorer så tyckte han @ passade bra in mellan mottagare och datornamn när man skickade den. Vi använder det här system även idag och är en fundamental grund till e-post.</p>
 
-<h2 class="åttio">1980</h2>
-
-<p>Med tal om mejl, så skickas det första mejlet i Svergie år 1983, där Björn Eriksen blir den första svenksen som tog emot ett mejl över interntet.</p>
-<p>Mejlet kommer från Amsterdam och Jim McKie på European Unix Network. Mejlet är dock bara ett testmejl och är inget spännande men det är historisk för Sveriges Webbhistoria.</p>
-<p>Ännu idag används e-post globalt och är fortfarande det kommunikationsätt som används av flest internetanvändare med en rapport från 2019 som säger att e-post används av 97 procent av internetanvändare.</p>
-
-<h2 class="nittio">1990</h2>
-
-<p>Den första webbplatsen i Svergie skapas under året 1993 vid Linköpings Universitet. Det är en datorförening som heter Lysator som då skapade sin egen server och därmed en webbsida. </p>
-<p>Webbsidan får addressen lysator.liu.se och blir till den sjätte webbsidan i världen. Dens innehåll är väldigt lätt och handlar bara om verksamheten, lite informatiom om vad de är och medlemmarna på föreningen.</p>
-
-<h2 class="tvåtusen">2000</h2>
-
-<p>2005 blir året som Youtube skapas, men vart började youtube egentligen? Vilken var den första videon? Jo, det var en video som kallades "me at the zoo" som laddades up av Jawed Karim.</p>
-<p>Youtube blir känt snabbt, med 72 miljoner användare bara ett år efter det skapades. Men någonting annant hände också ett år efter. Youtube blir köpt av google för 12 miljarder kronor och Youtube har varit en av de mest besökta webbsidorna sen dess.</p>
-<p>En känd svensk youtuber från tidig youtube som är fortfarande kända idag är den svenska youtubern Felix Kjellberg, eller mer känd som PewDiePie. Växer under 2010-talet väldigt snabbt och redan 2013 är hans youtube kanal den mest prenumerade kanalen med 13 miljoner prenumeranter.</p>
-
-<h2 class="tvåtusentio">2010</h2>
-
-<p>En av de mest kända sociala medier platformer släpptes under 10-talet och denna app heter Snapchat.</p>
-<p>Snapchat är en app där folk kan snabbt skicka bilder och videor såm då kallas "snaps" till varandra och det blir snabbt känt mellan ungdomar då de kallas att "snapa".</p>
-<p>Men bilderna och videorna som publicerades sparades inte av Snapchat och det finns många funktioner som ger användaren information om deras bilder sparas eller liknande. Vilket gjorde att många uppskattade integriteten med Snapchat och att de alltid visste vad andra folk gjorde med deras bilder.</p>
-
-<h2 class="tvåtusentjugo">2020</h2>
-
-<p>Jag tror vi alla har hört ordet AI nu någon gång i vårt liv och säkert ganska ofta. På det senaste 4 åren så har AI gått från ett verktyg som vi kunde lätt märka på AI generade bilder och texter, till ett verktyg där det finns nu AI för att ens lista ut om något är AI.</p>
-<p>AI funkar genom att använda data den har blivit inmatad och tränad på och använder sedan den träningen för att generera bilder eller text på vad användaren frågar om. Men det gör den också svag på några områden, såsom bilder på saker som den inte har någon träning på"</p>
-<p>Men AI har också sina negativa sidor, såsom hur vi använder den och hur det kommer se ut för framtiden. För att elever använder en model som heter "ChatGPT" väldigt ofta i skolan för att göra deras arbete istället för att faktiskt göra det själv. Vi vet inte heller vad AI kommer ha för jobb i samhället i framtiden heller. Kommer den ta våra jobb eller kommer den bli använd för skändliga aktiviteter.</p>
-</section>
-
-<section id="principer">
-<h1 class="principer">Webbens Grundläggande Principer</h1>
-
-<p>Allt det här är coolt och allt, men hur funkar egentligen allt det här? Hur är det möjligt att du kan bara skriva in något i en webbläsare och komma från en sida till en annan, snabbt och smidigt?</p>
-<p>Jo redan 1974 fick vi se starten på tekinken bakom internetet. Den gick vid namnet TCP/IP. Det är två stycken seperata protokol som är skapad av folk från Arpanet (det som la grunden till internetet)</p>
-<p>Dessa protokol hade ett mål: att snabbt skicka paket med information mellan datorer och nätverk. Det spelar ingen roll hur eller vad du skickar i paketet, bara det kommer fram. Paketet delades också upp i mindre bitar och sen gjordes hel för att göra det lättare och snabbare att skicka.</p>
-<p>Men det är bara hur internetet är byggt, men hur är det egentligen vi surfar webbsidor och liknande? Vi vet ju att det inte är någonting som heter TCP/IP. Jo, du har säkert hört sekvensen av bokstäver "www" eller "World Wide Web" och det är så vi surfar webbsidor snabbt och är vad alla webbläsarna är byggda på. Den gör det möjligt med så kallade "URL" för att läsa in webbsidor. URL visar din dator hur den ska komma till webbsidan och är också dels ett system för att hjälpa webbsidor kan läsa och visa innehåll.</p>
-<p>World Side Web skapades 1989 och på den tiden fanns det inget sätt att länka till och mellan saker och webben gjorde det möjligt. Du kunde nu också även visa både foton, film och ljud vilket var ett stort steg för webben.</p>
-<p>Vi använder webben ännu idag och det är en fundamental princip i hur webben fungerar men den är inte lika viktigt som internetet är.</p>
-<img src="https://webbteknik.net/antonl/historia/img/internet.webp" alt="starten" class="start">
-</section>
-
-<section id="ommig">
-<h1 class="ommig">Om Mig</h1>
-<img src="file:///C:/Users/sande/OneDrive/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F/funny.jpg" alt="sander" class="sander">
-
-<p>Mitt namn är Sander Josefsson, jag var född i Varberg 2008, den 13 oktober klockan 17:47. Jag skrev den här texten för jag bliv tvingad av min lärare, Fredrik Silverglimth. Tydligen så var anledningen att det var lättare att göra detta än att ha oss plugga på sakerna en åt gången. Men jag ignorerar att det skulla vara jobbigare att ha gjort det på det sättet och att han faktiskt gav oss en ganska (ganska är generöst) rolig uppgift och istället skyller jag alla mina problem på han.</p>
-<p>Just det! Det skulle handla om mig. Jag går på Peder Skrivarens skola i år 2, är jag glad för att vara där? Nej. Men är jag glad att jag får pengar ifrån det? Ja.</p>
-<p>Min fritid ser ut så här: vakna > spela > skola > plugga så lite som möjligt > lunch > trött vilket då läggs på plugga så lite som möjligt > cykla hem > spela > middag > sova och så börjar det om. Varför är jag fast i denna cykeln? jo det beror på den globala uppvärmningen av jorden, det är en tragedi. Det hade dock inget att göra om mig, jag ljög.</p>
-<p>Hursomhelst, så är jag glad att få gjort denna uppgift äntligen, jag hoppas du har gillat min webbsida även om den inte är den finaste där ute. Nah vet du vad jag är trött på det här, ha istället Lorem Ipsum, hej då!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eros felis, dictum id justo quis, feugiat fermentum risus. Proin aliquet ipsum egestas mattis euismod. Sed nec magna blandit, rutrum nulla eget, convallis mi. Integer ut sem commodo, egestas ipsum ut, bibendum nunc. Vestibulum ut pharetra sem. In egestas libero a vestibulum efficitur. Proin lacinia luctus lorem, eget convallis dolor tincidunt vel. Nulla facilisi. Duis et ante rutrum, iaculis quam sit amet, tempor nunc. In ornare fringilla dictum. Maecenas finibus tristique eleifend. Sed ultrices ex id mauris commodo, vitae auctor lacus interdum. Sed molestie velit dignissim velit rhoncus, sit amet ullamcorper urna fringilla. Nulla sit amet urna tincidunt, luctus enim eget, blandit mauris. </p>
-<p>Phasellus eget eros vitae arcu porttitor dignissim. Etiam nec cursus nulla. Nullam nec urna sit amet sapien gravida ullamcorper vel id arcu. Donec porttitor dui auctor dui tincidunt, eu facilisis enim consequat. Morbi suscipit ut lectus mollis efficitur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut scelerisque felis metus, vel gravida nibh ullamcorper non. Donec tempor accumsan est nec varius. Aenean elementum mollis felis, eu facilisis tellus. Vivamus eleifend est non quam varius, sagittis vehicula mauris consectetur. Duis magna mi, volutpat non hendrerit vel, tempor nec magna. Pellentesque vitae pulvinar turpis, eu scelerisque elit. Praesent ornare, magna at consectetur semper, erat turpis tristique justo, eu eleifend eros mi non nisl.</p>
-<p>Proin et sem massa. Duis nec velit at neque gravida sodales. Mauris dapibus nibh eu ipsum iaculis sagittis. Integer vel pellentesque neque, molestie luctus lorem. Curabitur feugiat, erat ac consectetur rutrum, nisi purus sodales ex, vitae sollicitudin orci mauris ut risus. Curabitur pretium tortor quis dolor imperdiet efficitur. Suspendisse potenti. Integer id libero sodales, consectetur lorem vitae, luctus massa.</p>
-<p>Mauris ex eros, feugiat non tellus ut, bibendum dictum arcu. Morbi vel facilisis est. Ut viverra dolor a dignissim fringilla. Mauris ut fermentum ligula. Suspendisse laoreet pretium mi, vel mollis leo volutpat id. Praesent suscipit nunc diam, ut venenatis augue lobortis quis. Vivamus vel tellus ipsum. Mauris sit amet nunc vel mi fermentum aliquet. Nunc tempor urna est, non pretium nisl feugiat quis. Vestibulum tristique a urna ac pharetra. Aliquam tincidunt dictum risus, et consectetur tortor venenatis eget. Nulla eget eleifend velit. Etiam mattis auctor faucibus.</p>
-<p>Ut blandit augue sit amet viverra hendrerit. Cras rhoncus elit neque, vel blandit elit vulputate nec. In varius leo aliquam nisi aliquet, eget condimentum nibh pretium. Proin non dui ac est eleifend dapibus. Praesent venenatis nunc orci, vitae bibendum ligula eleifend vel. Aliquam ullamcorper consectetur ex nec sodales. Nulla facilisi. Vivamus ullamcorper pulvinar mauris, dapibus lacinia ipsum pretium sit amet. Aliquam at libero dui. Cras faucibus efficitur ligula, quis tincidunt lectus accumsan ut. In sit amet feugiat erat. Cras dolor arcu, tincidunt et sollicitudin nec, sodales pulvinar turpis. Vestibulum vestibulum ante id dui condimentum pulvinar. Vestibulum a commodo justo.</p>
-</section>
-
-
-
-
+<script src="script.js"></script>
 </body>
