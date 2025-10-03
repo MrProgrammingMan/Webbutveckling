@@ -1,24 +1,25 @@
 body {
-  background-color: aliceblue;
+  background-color: #f0f8ff;
   margin: 0;
-  padding-top: 40px;
+  padding-top: 40px
+}
+
+.web {
+  width: 100%
+}
+
+.sander {
+  width: 100%
 }
 
 h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 50px
 }
 
 p {
   text-align: center;
-  font-size: 20px;
-}
-
-h2 {
-  text-align: center;
-  margin: 10px;
-  z-index: 9999;
-  font-size: 30px;
+  font-size: 20px
 }
 
 ul {
@@ -28,70 +29,74 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
-  width: 100%;
+  background-color: #333;
+  width: 100%
 }
 
 ul li {
   float: left;
-  border-right: 1px solid #bbbbbb;
+  border-right: 1px solid #bbb
 }
 
 ul li a {
   display: block;
-  color: white;
+  color: #fff;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+  text-decoration: none
 }
 
 ul li a:hover {
-  background-color: #111111;
+  background-color: #111
 }
 
-ul li a.active {
-  background-color: #04AA6D;
+ul li .active {
+  background-color: #04AA6D
 }
 
 section {
   max-width: 900px;
   margin: 80px auto;
   padding: 20px;
-  background: white;
-  border-radius: 10px;
+  background: #fff;
+  border-radius: 10px
 }
 
 .årtal .fakta {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease, padding 0.5s ease;
-  padding: 0 20px;
+  transition: max-height .5s ease, padding .5s ease;
+  padding: 0 20px
 }
 
-.årtal.open .fakta {
+.open .fakta {
   max-height: 1000px;
-  padding: 10px 20px;
+  padding: 10px 20px
 }
 
-.årtal h2 {
+h2 {
   cursor: pointer;
   background-color: #f0f0f0;
   padding: 5px;
   border-radius: 5px;
+  text-align: center;
+  margin: 10px;
+  z-index: 9999;
+  font-size: 30px
 }
 
-.årtal h2:hover {
-  background-color: #e0e0e0;
+h2:hover {
+  background-color: #e0e0e0
 }
 
-.årtal h2::after {
+h2:after {
   content: " ⯈";
   display: inline-block;
   margin-left: 10px;
-  transition: transform 0.3s;
-  transform-origin: center;
+  transition: transform .3s;
+  transform-origin: center
 }
 
-.årtal.open h2::after {
-  transform: rotate(90deg);
+.open h2:after {
+  transform: rotate(90deg)
 }

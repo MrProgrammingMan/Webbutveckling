@@ -1,6 +1,6 @@
 function showSection(sectionId, event) {
   event.preventDefault();
-  document.querySelectorAll("section").forEach(s => s.style.display = "none");
+  document.querySelectorAll("section").forEach(s => { s.style.display = "none"; });
   const activeSection = document.getElementById(sectionId);
   if (activeSection) activeSection.style.display = "block";
   document.querySelectorAll("ul li a").forEach(link => link.classList.remove("active"));
