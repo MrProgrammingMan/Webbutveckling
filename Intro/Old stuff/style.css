@@ -1,110 +1,125 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    font: 300 15px/1.7 "Lato", "Fontdiner Swanky";
-    color: black;
-  }
-  
-  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-    position: relative;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-  }
-  .bgimg-1 {
-    background-image: url("https://i.ytimg.com/vi/TG2Bo1Ex4Mc/maxresdefault.jpg");
-    min-height: 100vh;
-  }
-  
-  .bgimg-2 {
-    background-image: url("https://i.ytimg.com/vi/70sytwMDnQQ/maxresdefault.jpg");
-    min-height: 400px;
-  }
-  
-  .bgimg-3 {
-    background-image: url("https://i.ytimg.com/vi/m3PkKtvkqQs/maxresdefault.jpg");
-    min-height: 400px;
-  }
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font: 300 15px/1.7 "Lato", "Fontdiner Swanky";
+  color: black;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bgimg-1 {
+  background-image: url("https://i.ytimg.com/vi/TG2Bo1Ex4Mc/maxresdefault.jpg");
+  min-height: 100vh;
+}
+
+.bgimg-2 {
+  background-image: url("https://i.ytimg.com/vi/70sytwMDnQQ/maxresdefault.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("https://i.ytimg.com/vi/m3PkKtvkqQs/maxresdefault.jpg");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url("https://preview.redd.it/08fojb5g3o091.png?width=300&format=png&auto=webp&s=356b41c5cf5b74824845e43357ed10e2e30a9142");
+  min-height: 400px;
+}
+
+.container {
+  position: absolute;
+  margin: 30px;
+  width: auto;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 40px "Lato", sans-serif;
+  color: #111;
+}
+
+.social-bar {
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-bar a {
+  display: inline;
+  text-align: center;
+  padding: 13px;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  border-radius: 50%;
+}
+
+.social-bar a:hover {
+  background-color: rgb(6, 1, 1);
+}
+
+.discord {
+  background-color: #7289da;
+  margin: 7px;
+}
+
+.steam {
+  background-color: #1b2838;
+  margin: 7px;
+}
+
+.youtube {
+  background-color: #CD201F;
+  margin: 7px;
+}
+
+.reddit {
+  background-color: #FF4500;
+  margin: 7px;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-width: 1024px) {
+
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3,
   .bgimg-4 {
-    background-image: url("https://preview.redd.it/08fojb5g3o091.png?width=300&format=png&auto=webp&s=356b41c5cf5b74824845e43357ed10e2e30a9142");
-    min-height: 400px;
+    background-attachment: scroll;
   }
-  
-  .container {
-    position: absolute;
-    margin: 30px;
-    width: auto;
-  }
-  .caption {
-    position: absolute;
-    left: 0;
-    top: 30%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-  }
-  
-  .caption span.border {
-    background-color: #111;
-    color: #fff;
-    padding: 15px;
-    font-size: 20px;
-    letter-spacing: 5px;
-  }
-
-  h3 {
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font: 40px "Lato", sans-serif;
-    color: #111;
-  }
-  
-  .social-bar {
-    overflow: hidden;
-    z-index: 1;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .social-bar a {
-    display: inline;
-    text-align: center;
-    padding: 13px;
-    transition: all 0.4s ease;
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-    border-radius: 50%;
-  }
-
-  .social-bar a:hover {
-    background-color: rgb(6, 1, 1);
-  }
-  .discord {
-    background-color: #7289da;
-    margin: 7px;
-  }
-  .steam {
-    background-color: #1b2838;
-    margin: 7px;
-  }
-  .youtube {
-    background-color: #CD201F;
-    margin: 7px;
-  }
-  .reddit {
-    background-color: #FF4500;
-    margin: 7px;
-  }
-
-
-  /* Turn off parallax scrolling for tablets and phones */
-  @media only screen and (max-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-      background-attachment: scroll;
-    }
-  }
+}
