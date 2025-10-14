@@ -1,0 +1,127 @@
+/*
+ *	Name: Flexdemo
+ */
+
+/* ----------< FREDRIKS GRUNDSTIL - fritt att ändra senare men låt stå just nu >-------------------- */
+body {
+    max-width: 1300px;
+    margin: auto;
+}
+
+nav,
+main,
+aside,
+section,
+footer {
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 2.5em;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+a,
+a:active,
+a:visited {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover {
+    color: white;
+    background: black;
+}
+
+h1 {
+    font: 100 2em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font: 900 1.2em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #aaa;
+}
+
+p {
+    font: 0.9em Georgia, serif;
+    line-height: 1.7em;
+    text-align: justify;
+}
+
+footer p {
+    font: italic 0.6em Georgia, serif;
+    text-align: center;
+}
+
+
+/* ----------< KOD VI SKA FYLLA I MED FLEXBOX >----------------------------------------------------- */
+
+
+/* ---< Nav, Main, Aside >--- */
+#container1 {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+/* ---< Section (3st) >------ */
+#container2 {
+    display: flex;
+    justify-content: center;
+}
+
+/* ---< Footer >------------- */
+#container3 {}
+
+
+
+
+/* ---< container1 >--------- */
+nav {
+    flex: 1;
+    order: 1;
+}
+
+main {
+    flex: 5;
+    order: 2;
+}
+
+aside {
+    flex: 2;
+    order: 3;
+}
+
+
+/* ---< container2 >--------- */
+section {
+    width: 25%;
+    background-color: #ccc;
+    border-radius: 20px;
+}
+
+
+/* ---< container3 >--------- */
+footer {
+    flex: 1;
+}
+
+@media(min-width: 768px) {
+    #container1 {
+        display: flex;
+        align-items: stretch;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+    }
+
+    #container2 {
+        display: flex;
+        justify-content: center;
+    }
+}
