@@ -1,127 +1,195 @@
-/*
- *	Name: Flexdemo
- */
-
-/* ----------< FREDRIKS GRUNDSTIL - fritt att ändra senare men låt stå just nu >-------------------- */
+/* ----------< Base styles >-------------------- */
 body {
     max-width: 1300px;
     margin: auto;
-}
-
-nav,
-main,
-aside,
-section,
-footer {
     padding: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #f0f4f8;
+    color: #222;
+    box-sizing: border-box;
 }
 
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Reset lists */
 ul {
-    list-style-type: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
     line-height: 2.5em;
-    margin-left: 0;
-    padding-left: 0;
 }
 
-a,
-a:active,
-a:visited {
-    color: black;
-    text-decoration: none;
-    padding: 10px;
-}
-
-a:hover {
-    color: white;
-    background: black;
-}
-
+/* Headings */
 h1 {
-    font: 100 2em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 2.5em;
     text-align: center;
+    margin-bottom: 30px;
+    color: #222;
 }
 
 h2 {
-    font: 900 1.2em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    font-size: 1.3em;
+    color: #ff6a00;
+    margin-bottom: 15px;
     text-align: center;
-    color: #aaa;
 }
 
+/* Paragraphs */
 p {
-    font: 0.9em Georgia, serif;
-    line-height: 1.7em;
+    font-size: 1em;
+    line-height: 1.6em;
     text-align: justify;
+    color: #555;
 }
 
+/* Footer paragraph */
 footer p {
-    font: italic 0.6em Georgia, serif;
+    font-style: italic;
+    font-size: 0.8em;
     text-align: center;
+    color: #999;
 }
 
+/* ----------< Flex containers >-------------------- */
 
-/* ----------< KOD VI SKA FYLLA I MED FLEXBOX >----------------------------------------------------- */
-
-
-/* ---< Nav, Main, Aside >--- */
+/* Container 1: nav, main, aside */
+/* Mobile first: stacked */
 #container1 {
     display: flex;
-    align-items: stretch;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
 }
 
-/* ---< Section (3st) >------ */
+/* Navigation styling */
+nav {
+    background: #4a90e2; /* bright blue */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Aside styling */
+aside {
+    background: #50e3c2; /* turquoise */
+    color: #004d40;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Main styling */
+main {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    color: #222;
+}
+
+/* Container 2: sections */
 #container2 {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
     justify-content: center;
 }
 
-/* ---< Footer >------------- */
-#container3 {}
-
-
-
-
-/* ---< container1 >--------- */
-nav {
-    flex: 1;
-    order: 1;
-}
-
-main {
-    flex: 5;
-    order: 2;
-}
-
-aside {
-    flex: 2;
-    order: 3;
-}
-
-
-/* ---< container2 >--------- */
+/* Sections */
 section {
-    width: 25%;
-    background-color: #ccc;
+    background-color: #f5a623; /* warm orange */
+    color: #3e2723;
     border-radius: 20px;
+    padding: 20px;
+    cursor: default;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
-
-/* ---< container3 >--------- */
-footer {
-    flex: 1;
+section:hover {
+    background-color: #f7b64c;
+    color: #2e1b16;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-@media(min-width: 768px) {
+/* Container 3: footer */
+#container3 {
+    background: #222;
+    color: white;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.2);
+}
+
+/* Links */
+a,
+a:active,
+a:visited {
+    color: #0077cc;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    border-radius: 6px;
+}
+
+a:hover {
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Navigation links color override */
+nav a,
+nav a:visited,
+nav a:active {
+    color: white;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0.3);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Flexbox order and sizing for wider screens */
+@media (min-width: 768px) {
+
     #container1 {
-        display: flex;
-        align-items: stretch;
-        flex-direction: row-reverse;
-        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    nav {
+        flex: 1;
+        order: 1;
+    }
+
+    main {
+        flex: 5;
+        order: 2;
+    }
+
+    aside {
+        flex: 2;
+        order: 3;
     }
 
     #container2 {
-        display: flex;
+        flex-direction: row;
         justify-content: center;
+        gap: 20px;
+    }
+
+    section {
+        width: 30%;
+        max-width: 300px;
     }
 }
