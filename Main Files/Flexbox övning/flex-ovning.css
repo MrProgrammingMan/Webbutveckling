@@ -1,0 +1,64 @@
+/* ---< Påverkar hela sidan >--------- */
+body {
+  margin:0;
+  display:flex;
+  flex-flow: row wrap;
+}
+
+p {
+  padding: 0 1em;
+}
+
+/* ---< HEADER & NAV >---------------- */
+header {
+  background: lightblue;
+  flex: 1 0 100%;
+}
+
+nav {
+  background: pink;
+  flex: 0 1 180px;
+  padding: 1em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1em;
+}
+
+nav li {
+  padding: 1em 0;
+}
+
+/* ---< MAIN >------------------------ */
+main {
+  background: lavender;
+  flex: 2 1 500px;
+  padding: 1em;
+}
+
+main p {
+  
+}
+
+main h2 {
+  padding: 0 1em;
+}
+
+/* ---< ASIDES >---------------------- */
+aside h4 {
+  padding: 0 1em;
+}
+
+.aside1 {
+  background: silver;
+  flex: 1 1 250px;
+  padding: 1em;
+}
+
+.aside2 {
+  background: lightgreen;
+  flex: 1 1 250px;
+  padding: 1em;
+}
