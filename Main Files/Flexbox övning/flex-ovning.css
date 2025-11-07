@@ -62,3 +62,12 @@ aside h4 {
   flex: 1 1 250px;
   padding: 1em;
 }
+
+/* ---< FOOTER >---------------------- */
+footer {
+  background: rebeccapurple;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  flex: 0 0 100%;   /* full width, stays below all flex items */
+}
