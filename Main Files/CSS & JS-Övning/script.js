@@ -1,11 +1,26 @@
 document.querySelector(".green").addEventListener("click", () => {
-  document.body.style.backgroundColor = "lightgreen";
+  if(document.body.style.backgroundColor == "lightgreen") {
+    document.body.style.backgroundColor = "white"
+  }
+  else {
+    document.body.style.backgroundColor = "lightgreen";
+  }
 });
 
 document.querySelector(".red").addEventListener("click", () => {
-  document.body.style.backgroundColor = "lightpink";
+  if(document.body.style.backgroundColor == "lightpink") {
+    document.body.style.backgroundColor = "white"
+  }
+  else {
+    document.body.style.backgroundColor = "lightpink";
+  }
 });
 
 document.querySelector(".blue").addEventListener("click", () => {
-  document.body.style.backgroundColor = "lightskyblue";
+  if(document.body.style.backgroundColor == "lightblue") {
+    document.body.style.backgroundColor = "white"
+  }
+  else {
+    document.body.style.backgroundColor = "lightblue";
+  }
 });
