@@ -1,0 +1,42 @@
+div {
+    position: absolute;
+}
+
+.green {
+margin: 100px;
+width: 200px;
+height: 200px;
+background-color: green;
+}
+
+.red {
+margin: 200px;
+width: 200px;
+height: 200px;
+z-index: 2;
+background-color: red;
+}
+
+.blue {
+margin: 300px;
+width: 200px;
+height: 200px;
+background-color: blue;
+}
+
+.green:hover {
+background-color: greenyellow;
+border-radius: 50%;
+z-index: 999;
+}
+
+.red:hover {
+rotate: 45deg;
+}
+
+.blue:hover {
+outline-style: dotted;
+outline-color: blue;
+background-color: transparent;
+}
+
