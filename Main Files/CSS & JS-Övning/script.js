@@ -1,14 +1,23 @@
+const myWow = document.getElementById("wow");
+
 let greenCount = 0;
 let redCount = 0;
 let blueCount = 0;
 let totalCount = 0;
 
+function checkWow() {
+  if (totalCount >= 15) {
+    myWow.style.display = "flex";
+  }
+}
+
 document.querySelector(".green").addEventListener("click", () => {
   greenCount += 1;
   totalCount += 1;
-    document.getElementById("greenScore").textContent = greenCount;
+  checkWow();
+  document.getElementById("greenScore").textContent = greenCount;
   if (document.body.style.backgroundColor === "lightgreen") {
-    document.body.style.backgroundColor = "white"
+    document.body.style.backgroundColor = "white";
   }
   else {
     document.body.style.backgroundColor = "lightgreen";
@@ -18,9 +27,10 @@ document.querySelector(".green").addEventListener("click", () => {
 document.querySelector(".red").addEventListener("click", () => {
   redCount += 2;
   totalCount += 2;
+  checkWow();
   document.getElementById("redScore").textContent = redCount;
   if (document.body.style.backgroundColor === "lightpink") {
-    document.body.style.backgroundColor = "white"
+    document.body.style.backgroundColor = "white";
   }
   else {
     document.body.style.backgroundColor = "lightpink";
@@ -30,18 +40,15 @@ document.querySelector(".red").addEventListener("click", () => {
 document.querySelector(".blue").addEventListener("click", () => {
   blueCount += 3;
   totalCount += 3;
-    document.getElementById("blueScore").textContent = blueCount;
+  checkWow();
+  document.getElementById("blueScore").textContent = blueCount;
   if (document.body.style.backgroundColor === "lightblue") {
-    document.body.style.backgroundColor = "white"
+    document.body.style.backgroundColor = "white";
   }
   else {
     document.body.style.backgroundColor = "lightblue";
   }
 });
-
-if (totalCount >= 15) {
-  
-}
 
 document.getElementById("greenScore").textContent = greenCount;
 document.getElementById("redScore").textContent = redCount;

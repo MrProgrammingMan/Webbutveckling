@@ -48,8 +48,13 @@
     font-weight: bold;
 }
 
-.wow {
-    font-size: 50px;
+#wow {
+    font-size: 75px;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    bottom: 10px;
+    display: none;
 }
 
 .green:hover {
